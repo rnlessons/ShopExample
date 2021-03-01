@@ -55,6 +55,7 @@
 	<false/>
 	<key>UIAppFonts</key>
 	<array>
+		<string>Custom.ttf</string>
 		<string>FontAwesome.ttf</string>
 	</array>
 </dict>

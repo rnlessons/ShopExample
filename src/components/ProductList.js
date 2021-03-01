@@ -9,6 +9,7 @@ import {
   FlatList,
   Pressable,
 } from 'react-native';
+import PublicText from './PublicText';
 import TabHeader from './TabHeader';
 
 // GET http://localhost:3000/commerce/products?limit=10&offset=1
@@ -65,10 +66,10 @@ const ProductListItem = ({item}) => {
         style={styles.productImage}
       />
       <View style={{flex: 1}}>
-        <Text style={styles.productName}>{item.productName}</Text>
-        <Text numberOfLines={2} style={styles.productDesc}>
+        <PublicText style={styles.productName}>{item.productName}</PublicText>
+        <PublicText numberOfLines={2} style={styles.productDesc}>
           {item.productDescription}
-        </Text>
+        </PublicText>
       </View>
     </Pressable>
   );
