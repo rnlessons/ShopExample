@@ -1,0 +1,6 @@
+module Pods_ShopExample_ShopExampleTests {
+  umbrella header "Pods-ShopExample-ShopExampleTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
