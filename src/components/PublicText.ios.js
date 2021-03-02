@@ -3,7 +3,7 @@ import {Text, StyleSheet} from 'react-native';
 
 const PublicText = ({style, children, ...props}) => {
   return (
-    <Text {...props} allowFontScaling={false} style={[styles.text, style]}>
+    <Text {...props} style={[styles.text, style]}>
       {children}
     </Text>
   );

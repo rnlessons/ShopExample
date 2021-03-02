@@ -1,6 +1,7 @@
 import 'react-native-gesture-handler';
 import * as React from 'react';
 import {StatusBar} from 'react-native';
+import {SafeAreaProvider} from 'react-native-safe-area-context';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 
@@ -18,10 +19,13 @@ const Stack = createStackNavigator();
 
 const App: () => React$Node = () => {
   return (
-    <>
+    <SafeAreaProvider>
       <StatusBar hidden={true} />
       <NavigationContainer>
-        <Stack.Navigator initialRouteName="MainTab">
+        <Stack.Navigator
+          initialRouteName="MainTab"
+          //  headerMode="none"
+        >
           <Stack.Screen
             name="MainTab"
             component={TabNavigator}
@@ -32,7 +36,7 @@ const App: () => React$Node = () => {
           ))}
         </Stack.Navigator>
       </NavigationContainer>
-    </>
+    </SafeAreaProvider>
   );
 };
 

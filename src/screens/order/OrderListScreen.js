@@ -1,10 +1,10 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import {SafeAreaView, Text} from 'react-native';
 
 export default function OrderListScreen(props) {
   return (
-    <View>
-      <Text>내용</Text>
-    </View>
+    <SafeAreaView>
+      <Text>주문 목록</Text>
+    </SafeAreaView>
   );
 }
