@@ -27,7 +27,6 @@ export default function BottomTabBar({state, descriptors, navigation}) {
 
   // const isFocused = state.index === index;
 
-  console.log(routeName);
   const onPress = useCallback(
     (name) => () => {
       navigation.navigate(name);

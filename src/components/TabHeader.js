@@ -5,7 +5,6 @@ import PublicText from './PublicText';
 
 export default function TabHeader({title}) {
   const insets = useSafeAreaInsets();
-  console.log(insets);
   return (
     <View
       style={[

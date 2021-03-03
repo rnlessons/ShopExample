@@ -22,10 +22,7 @@ const App: () => React$Node = () => {
     <SafeAreaProvider>
       <StatusBar hidden={true} />
       <NavigationContainer>
-        <Stack.Navigator
-          initialRouteName="MainTab"
-          //  headerMode="none"
-        >
+        <Stack.Navigator initialRouteName="MainTab" headerMode="none">
           <Stack.Screen
             name="MainTab"
             component={TabNavigator}
