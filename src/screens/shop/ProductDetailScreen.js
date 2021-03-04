@@ -13,6 +13,7 @@ import {
 } from 'react-native';
 import TransparentHeader from '../../components/TransparentHeader';
 import PublicText from '../../components/PublicText';
+import ColorView from '../../components/ColorView';
 
 const aspectRatio = 640 / 480;
 
@@ -84,12 +85,7 @@ export default function ProductDetail() {
           </PublicText>
         </Row>
         <Row title="색상">
-          <View
-            style={[
-              styles.color,
-              {backgroundColor: _.get(route, 'params.item.color', '')},
-            ]}
-          />
+          <ColorView size={5} color={_.get(route, 'params.item.color', '')} />
         </Row>
         <Row title="소재">
           <PublicText>
@@ -123,10 +119,5 @@ const styles = StyleSheet.create({
   },
   row: {
     marginTop: 20,
-  },
-  color: {
-    width: 50,
-    height: 50,
-    borderRadius: 50,
   },
 });

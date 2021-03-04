@@ -3,6 +3,7 @@ import {useNavigation} from '@react-navigation/native';
 import React, {useCallback} from 'react';
 import {Image, StyleSheet, View, Text, Pressable} from 'react-native';
 import PublicText from './PublicText';
+import ColorView from './ColorView';
 // GET http://localhost:3000/commerce/products?limit=10&offset=1
 // "id": 9,
 // "imageUrl":
@@ -39,9 +40,12 @@ const ProductListItem = ({item}) => {
         <PublicText style={styles.productDesc} numberOfLines={2}>
           {item.productDescription}
         </PublicText>
-        <PublicText style={styles.productPrice}>
-          &#8361; {numeral(item.price).format('0,0')}
-        </PublicText>
+        <View style={styles.etcContainer}>
+          <PublicText style={styles.productPrice}>
+            &#8361; {numeral(item.price).format('0,0')}
+          </PublicText>
+          <ColorView size={1} color={item.color} />
+        </View>
       </View>
     </Pressable>
   );
@@ -72,8 +76,14 @@ const styles = StyleSheet.create({
     fontSize: 17,
   },
   productPrice: {
-    marginTop: 17,
+    flex: 1,
     fontSize: 20,
     textAlign: 'right',
+    marginRight: 20,
+  },
+  etcContainer: {
+    flexDirection: 'row',
+    marginTop: 17,
+    alignItems: 'center',
   },
 });
