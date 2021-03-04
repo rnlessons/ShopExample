@@ -1,5 +1,6 @@
 import React, {useEffect, useState, useCallback} from 'react';
 import {StyleSheet, FlatList} from 'react-native';
+import PublicText from './PublicText';
 
 import TabHeader from './TabHeader';
 import ProductListItem from './ProductListItem';
@@ -70,7 +71,7 @@ const ProductList = () => {
 
   return (
     <>
-      <TabHeader title="상품 리스트" />
+      {isLoading && <PublicText>Loading...</PublicText>}
       <FlatList
         data={list}
         onEndReached={loadMoreOlderList}

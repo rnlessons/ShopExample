@@ -1,7 +1,7 @@
 export const fetchMoreList = async (limit, offset) => {
   try {
     let response = await fetch(
-      `http://190.190.222.33:3000/commerce/products?limit=${limit}${
+      `http://190.190.222.41:3000/commerce/products?limit=${limit}${
         offset ? `&offset=${offset}` : ''
       }`,
       {
