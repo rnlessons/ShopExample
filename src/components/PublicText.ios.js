@@ -1,6 +1,8 @@
 import React from 'react';
 import {Text, StyleSheet} from 'react-native';
 
+export const fontFamily = 'THEEuropetravel';
+
 const PublicText = ({style, children, ...props}) => {
   return (
     <Text {...props} style={[styles.text, style]}>
@@ -11,7 +13,8 @@ const PublicText = ({style, children, ...props}) => {
 
 const styles = StyleSheet.create({
   text: {
-    fontFamily: 'THEEuropetravel',
+    fontFamily,
   },
 });
+
 export default PublicText;

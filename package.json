@@ -3,6 +3,8 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
+    "postinstall": "yarn run cjk-textinput-patch",
+    "postuninstall": "yarn run cjk-textinput-patch",
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "start": "react-native start",
@@ -10,6 +12,7 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "@react-native-async-storage/async-storage": "^1.14.1",
     "@react-native-community/masked-view": "^0.1.10",
     "@react-navigation/bottom-tabs": "^5.11.8",
     "@react-navigation/native": "^5.9.3",
@@ -21,6 +24,8 @@
     "react-native": "0.63.4",
     "react-native-gesture-handler": "^1.10.3",
     "react-native-indicators": "^0.17.0",
+    "react-native-input-spinner": "^1.7.7",
+    "react-native-linear-gradient": "^2.5.6",
     "react-native-reanimated": "^1.13.2",
     "react-native-safe-area-context": "^3.1.9",
     "react-native-screens": "^2.18.0",

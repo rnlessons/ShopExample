@@ -3,10 +3,10 @@ import {View, StyleSheet} from 'react-native';
 
 import PublicText from './PublicText';
 
-export default function ListEmptyComponent() {
+export default function ListEmptyComponent({title}) {
   return (
     <View style={styles.container}>
-      <PublicText style={styles.text}>등록된 상품이 없습니다.</PublicText>
+      <PublicText style={styles.text}>{title || '등록된 상품이 없습니다.'}</PublicText>
     </View>
   );
 }
