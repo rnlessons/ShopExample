@@ -2,6 +2,7 @@ import React, {useCallback} from 'react';
 import {View, Text, Pressable, StyleSheet} from 'react-native';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
+import {getUser} from '../libs/auth';
 import PublicText from './PublicText';
 
 const Icons = {
@@ -28,7 +29,16 @@ export default function BottomTabBar({state, descriptors, navigation}) {
   // const isFocused = state.index === index;
 
   const onPress = useCallback(
-    (name) => () => {
+    (name) => async () => {
+      if (name === 'MyPage' || name === 'OrderList') {
+        const user = await getUser();
+
+        if (!user) {
+          navigation.navigate('LoginScreen');
+          return;
+        }
+      }
+
       navigation.navigate(name);
     },
     [navigation],

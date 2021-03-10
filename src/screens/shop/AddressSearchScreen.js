@@ -21,8 +21,8 @@ import TransparentHeader from '../../components/TransparentHeader';
 function ListItem({item, onPress}) {
   return (
     <Pressable style={styles.item} onPress={onPress(item.zipNo, item.roadAddr)}>
-      <PublicText>{item.zipNo}</PublicText>
-      <PublicText>{item.roadAddr}</PublicText>
+      <PublicText style={styles.zipNo}>{item.zipNo}</PublicText>
+      <PublicText style={styles.roadAddr}>{item.roadAddr}</PublicText>
     </Pressable>
   );
 }
@@ -92,9 +92,16 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     paddingLeft: 20,
     paddingRight: 20,
+    fontSize: 20,
     fontFamily,
   },
   item: {
     padding: 10,
+  },
+  zipNo: {
+    fontSize: 20,
+  },
+  roadAddr: {
+    fontSize: 20,
   },
 });

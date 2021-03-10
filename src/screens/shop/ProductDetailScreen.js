@@ -1,7 +1,7 @@
 import _ from 'lodash';
 import moment from 'moment';
 import numeral from 'numeral';
-import {useRoute} from '@react-navigation/native';
+import {useRoute, TabActions} from '@react-navigation/native';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
 import React, {useCallback, useState} from 'react';
 import InputSpinner from 'react-native-input-spinner';
@@ -32,11 +32,6 @@ const Row = ({children, title}) => {
   );
 };
 
-// const formatter = new Intl.NumberFormat('ko-KR', {
-//   style: 'currency',
-//   currency: 'WON',
-// });
-
 export default function ProductDetailScreen({navigation}) {
   const route = useRoute();
   const insets = useSafeAreaInsets();
@@ -47,6 +42,7 @@ export default function ProductDetailScreen({navigation}) {
 
   const onOrder = useCallback(async () => {
     const user = await getUser();
+
     if (!user) {
       navigation.navigate('LoginScreen');
       return;
@@ -79,7 +75,7 @@ export default function ProductDetailScreen({navigation}) {
               text: '확인',
               onPress: () => {
                 navigation.goBack();
-                navigation.navigate('ProductList');
+                navigation.navigate('OrderList');
               },
             },
           ]);

@@ -1,10 +1,13 @@
 import React from 'react';
-import {SafeAreaView, Text} from 'react-native';
+import {View, Text} from 'react-native';
+import OrderList from '../../components/OrderList';
+import TabHeader from '../../components/TabHeader';
 
 export default function OrderListScreen(props) {
   return (
-    <SafeAreaView>
-      <Text>주문 목록</Text>
-    </SafeAreaView>
+    <>
+      <TabHeader title="주문 목록" />
+      <OrderList />
+    </>
   );
 }

@@ -16,12 +16,12 @@ export default function StackHeader({title}) {
           paddingTop: insets.top,
         },
       ]}>
+      <Pressable style={styles.closeBtn} onPress={() => navigation.goBack()}>
+        <PublicText style={styles.title}>뒤로</PublicText>
+      </Pressable>
       <View style={styles.titleContainer}>
         <PublicText style={styles.title}>{title}</PublicText>
       </View>
-      <Pressable style={styles.closeBtn} onPress={() => navigation.goBack()}>
-        <FontAwesome name="close" size={30} color="#102F5D" />
-      </Pressable>
     </View>
   );
 }
@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   titleContainer: {
-    marginLeft: 50,
+    marginRight: 50,
     paddingBottom: 20,
     paddingTop: 20,
     justifyContent: 'center',

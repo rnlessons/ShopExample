@@ -19,7 +19,7 @@ export const fetchMoreList = async (limit, offset) => {
       },
     );
     let json = await response.json();
-    return json.rows;
+    return _.get(json, 'rows', []);
   } catch (error) {
     console.error(error);
   }
@@ -102,6 +102,40 @@ export const order = async (productId, zipCode, address, quantity, price) => {
     });
     let json = await response.json();
     return json;
+  } catch (error) {
+    console.error(error);
+  }
+};
+
+export const fetchOrderList = async (month) => {
+  try {
+    const token = await getToken();
+    let response = await fetch(`${baseUrl}/commerce/orders?month=${month}`, {
+      method: 'GET',
+      headers: {
+        ...headers,
+        Authorization: `Bearer ${token}`,
+      },
+    });
+    let json = await response.json();
+    return _.get(json, 'rows', []);
+  } catch (error) {
+    console.error(error);
+  }
+};
+
+export const fetchOrder = async (orderId) => {
+  try {
+    const token = await getToken();
+    let response = await fetch(`${baseUrl}/commerce/order/${orderId}`, {
+      method: 'GET',
+      headers: {
+        ...headers,
+        Authorization: `Bearer ${token}`,
+      },
+    });
+    let json = await response.json();
+    return _.get(json, 'row', {});
   } catch (error) {
     console.error(error);
   }
