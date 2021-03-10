@@ -8,7 +8,7 @@ export const setToken = async (token) => {
   }
 };
 
-export const getToken = async (token) => {
+export const getToken = async () => {
   try {
     const value = await AsyncStorage.getItem('token');
     return value || null;
@@ -18,6 +18,17 @@ export const getToken = async (token) => {
 };
 
 export const setUser = async (user) => {
+  // {
+  //     "id": 1,
+  //     "name": "홍길동",
+  //     "email": "hgd_test@gmail.com",
+  //     "password": "BBTeVSBNb1zYJCFhmC0RXxCkiWE=",
+  //     "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/posterjob/128.jpg",
+  //     "lastestLoginAt": null,
+  //     "createdAt": "2021-03-01T14:44:22.135Z",
+  //     "updatedAt": null
+  // }
+  //   '{ \"id\": 1, \"name\": \"홍길동\"}'
   try {
     await AsyncStorage.setItem('user', JSON.stringify(user));
   } catch (e) {
