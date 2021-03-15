@@ -17,7 +17,7 @@ const Row = ({label, value}) => {
 
 const DEFAULT_IMAGE = require('../../assets/images/avataaars.png');
 
-export default function ProductListScreen({navigation}) {
+export default function MyPageScreen({navigation}) {
   const [profile, setProfile] = useState({});
   const [profileImage, setProfileImage] = useState(DEFAULT_IMAGE);
 

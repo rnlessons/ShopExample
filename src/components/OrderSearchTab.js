@@ -54,9 +54,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     padding: 10,
   },
-  groupContainer: {
-    flexDirection: 'row',
-  },
   btn: {
     backgroundColor: '#eee',
     alignItems: 'center',

@@ -7,7 +7,7 @@ import ListEmptyComponent from './ListEmptyComponent';
 import {fetchOrderList} from '../libs/api';
 import OrderSearchTab from './OrderSearchTab';
 
-const ProductList = () => {
+const OrderList = () => {
   const [searchMonth, setSearchMonth] = useState(moment().format('YYYY-MM'));
   const [list, setList] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -58,4 +58,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default ProductList;
+export default OrderList;

@@ -11,7 +11,7 @@ const {ProductListScreen, OrderListScreen, MyPageScreen} = screens;
 export default function TabNavigator() {
   return (
     <Tab.Navigator
-      initialRouteName="OrderList"
+      initialRouteName="ProductList"
       tabBar={(props) => <BottomTabBar {...props} />}>
       <Tab.Screen name="ProductList" component={ProductListScreen} />
       <Tab.Screen name="OrderList" component={OrderListScreen} />
