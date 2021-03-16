@@ -1,7 +1,7 @@
 import _ from 'lodash';
 import {getToken} from './auth';
 
-const baseUrl = 'http://192.168.0.9:3000';
+const baseUrl = 'http://190.190.222.15:3000';
 const headers = {
   Accept: 'application/json',
   'Content-Type': 'application/json',

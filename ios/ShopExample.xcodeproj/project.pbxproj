@@ -17,6 +17,7 @@
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* ShopExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* ShopExampleTests.m */; };
 		5393506F25ED457C00DF30CC /* Custom.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5393506E25ED457C00DF30CC /* Custom.ttf */; };
+		53F97CBB26004CE8003D1029 /* BootSplash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53F97CBA26004CE8003D1029 /* BootSplash.storyboard */; };
 		5DDC457ED708237B637A3684 /* libPods-ShopExample-ShopExampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC15A6C4774E67EC60FD1F0F /* libPods-ShopExample-ShopExampleTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		B2F2A84495FA423DB1C978C6 /* libPods-ShopExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B7DAB341BE9F9A2E7EFEECC /* libPods-ShopExample.a */; };
@@ -57,6 +58,7 @@
 		42B561B19F4C4E126A987BB0 /* Pods-ShopExample-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShopExample-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-ShopExample-tvOSTests/Pods-ShopExample-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5349F3E425ED1FC400E3F559 /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
 		5393506E25ED457C00DF30CC /* Custom.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Custom.ttf; sourceTree = "<group>"; };
+		53F97CBA26004CE8003D1029 /* BootSplash.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = BootSplash.storyboard; path = ShopExample/BootSplash.storyboard; sourceTree = "<group>"; };
 		5E1A79925DCF90BEA130FC43 /* Pods-ShopExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShopExample.debug.xcconfig"; path = "Target Support Files/Pods-ShopExample/Pods-ShopExample.debug.xcconfig"; sourceTree = "<group>"; };
 		681B70D20D4310070C0D9C23 /* Pods-ShopExample-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShopExample-tvOS.release.xcconfig"; path = "Target Support Files/Pods-ShopExample-tvOS/Pods-ShopExample-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		6BED72EE80D890797E32D2F3 /* Pods-ShopExample-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShopExample-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-ShopExample-tvOSTests/Pods-ShopExample-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 		13B07FAE1A68108700A75B9A /* ShopExample */ = {
 			isa = PBXGroup;
 			children = (
+				53F97CBA26004CE8003D1029 /* BootSplash.storyboard */,
 				5349F3E325ED1F9800E3F559 /* Fonts */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
@@ -363,6 +366,7 @@
 				5393506F25ED457C00DF30CC /* Custom.ttf in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				53F97CBB26004CE8003D1029 /* BootSplash.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

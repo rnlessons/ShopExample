@@ -3,8 +3,6 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "postinstall": "yarn run cjk-textinput-patch",
-    "postuninstall": "yarn run cjk-textinput-patch",
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "start": "react-native start",
@@ -22,6 +20,7 @@
     "numeral": "^2.0.6",
     "react": "16.13.1",
     "react-native": "0.63.4",
+    "react-native-bootsplash": "^3.1.5",
     "react-native-gesture-handler": "^1.10.3",
     "react-native-indicators": "^0.17.0",
     "react-native-input-spinner": "^1.7.7",

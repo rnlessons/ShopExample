@@ -1,5 +1,6 @@
 import React, {useEffect, useState, useCallback} from 'react';
 import {StyleSheet, FlatList} from 'react-native';
+import RNBootSplash from 'react-native-bootsplash';
 import PublicText from './PublicText';
 
 import TabHeader from './TabHeader';
@@ -30,6 +31,8 @@ const ProductList = () => {
 
       setList([...initialList]);
       setIsLoading(false);
+
+      await RNBootSplash.hide({fade: true});
     };
 
     initList();
