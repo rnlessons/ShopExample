@@ -31,11 +31,11 @@ const ProductList = () => {
 
       setList([...initialList]);
       setIsLoading(false);
-
-      await RNBootSplash.hide({fade: true});
     };
 
-    initList();
+    initList().finally(async () => {
+      await RNBootSplash.hide({fade: true});
+    });
   }, [setList]);
 
   // 이전

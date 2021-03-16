@@ -18,6 +18,7 @@
 		2DCD954D1E0B4F2C00145EB5 /* ShopExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* ShopExampleTests.m */; };
 		5393506F25ED457C00DF30CC /* Custom.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5393506E25ED457C00DF30CC /* Custom.ttf */; };
 		53F97CBB26004CE8003D1029 /* BootSplash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53F97CBA26004CE8003D1029 /* BootSplash.storyboard */; };
+		53F97CC926008341003D1029 /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 008F07F21AC5B25A0029DE68 /* main.jsbundle */; };
 		5DDC457ED708237B637A3684 /* libPods-ShopExample-ShopExampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC15A6C4774E67EC60FD1F0F /* libPods-ShopExample-ShopExampleTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		B2F2A84495FA423DB1C978C6 /* libPods-ShopExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B7DAB341BE9F9A2E7EFEECC /* libPods-ShopExample.a */; };
@@ -317,6 +318,7 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
+						DevelopmentTeam = 7WSMP83UQW;
 						LastSwiftMigration = 1120;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
@@ -363,6 +365,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53F97CC926008341003D1029 /* main.jsbundle in Resources */,
 				5393506F25ED457C00DF30CC /* Custom.ttf in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
@@ -745,6 +748,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7WSMP83UQW;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = ShopExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -753,7 +757,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaist.ShopExample;
 				PRODUCT_NAME = ShopExample;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -768,6 +772,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7WSMP83UQW;
 				INFOPLIST_FILE = ShopExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -775,7 +780,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaist.ShopExample;
 				PRODUCT_NAME = ShopExample;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
